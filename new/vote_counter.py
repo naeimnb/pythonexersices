@@ -9,6 +9,3 @@ lst_contry=list(vote.keys())
 lst_contry.sort()
 for contry in lst_contry:
     print(contry, vote[contry])
-
-
-
