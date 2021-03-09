@@ -1,4 +1,5 @@
 import math
+
 tedad = int(input(''))
 lst_adade_varede=list()
 adad=0
@@ -8,5 +9,5 @@ for i in range(0,tedad):
 
 for num in lst_adade_varede:
     res_adad=math.sqrt(num)
-    print('%.4f' %res_adad)
-
+    res_adad=f'{res_adad:.5f}'[:-1]
+    print(res_adad)
