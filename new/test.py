@@ -46,3 +46,11 @@ def hash_password_hack(input_file_name, output_file_name):
         dic_cracked[user_name]=dic_hashed[item]
 
     creat_cracked_file(output_file_name)
+
+
+
+
+
+input_file_name='/home/naeim/Desktop/pythonexersices/projectfinal1/sample.csv'
+output_file_name='/home/naeim/Desktop/pythonexersices/projectfinal1/cracked_file_new.csv'
+hash_password_hack(input_file_name, output_file_name)
