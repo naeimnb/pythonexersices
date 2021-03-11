@@ -25,24 +25,27 @@ class Student:
         return(Student.ave_vazn)
 
 
+def nimi(tedade_student,madrese):
+    amare_sen=input('').split()
 
-tedade_student=int(input(''))
+    if len(amare_sen)!=tedade_student:
+        amare_sen=amare_sen[:-1]
 
-amare_sen=input('').split()
-if len(amare_sen)!=tedade_student:
-    amare_sen=amare_sen[:-1]
+    amare_ghad=input('').split()
+    if len(amare_ghad)!=tedade_student:
+        amare_ghad=amare_ghad[:-1]
 
-amare_ghad=input('').split()
-if len(amare_ghad)!=tedade_student:
-    amare_ghad=amare_ghad[:-1]
+    amare_vazn=input('').split()
+    if len(amare_vazn)!=tedade_student:
+        amare_vazn=amare_vazn[:-1]
 
-amare_vazn=input('').split()
-if len(amare_vazn)!=tedade_student:
-    amare_vazn=amare_vazn[:-1]
+    for i in range(0, tedade_student):
+        #print(amare_sen[i],amare_ghad[i],amare_vazn[i])
+        madrese=Student(amare_sen[i],amare_ghad[i],amare_vazn[i])
 
 
-#for sen_stu in amare_sen:
-#    for ghad_stu in amare_ghad:
-#        for vazn_stu in amare_vazn:
-#            Student(sen_stu,ghad_stu,vazn_stu)
-#print(Student.average_sen())
+
+nimi(3,'A')
+print(A.ave_sen())
+
+ 
