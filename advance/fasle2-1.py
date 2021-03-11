@@ -24,7 +24,25 @@ class Student:
     def average_vazn(self):
         return(Student.ave_vazn)
 
-naeim=Student(33,180,100)
-ali=Student(34,180,70)
 
-print(ali.average_vazn())
+
+tedade_student=int(input(''))
+
+amare_sen=input('').split()
+if len(amare_sen)!=tedade_student:
+    amare_sen=amare_sen[:-1]
+
+amare_ghad=input('').split()
+if len(amare_ghad)!=tedade_student:
+    amare_ghad=amare_ghad[:-1]
+
+amare_vazn=input('').split()
+if len(amare_vazn)!=tedade_student:
+    amare_vazn=amare_vazn[:-1]
+
+
+#for sen_stu in amare_sen:
+#    for ghad_stu in amare_ghad:
+#        for vazn_stu in amare_vazn:
+#            Student(sen_stu,ghad_stu,vazn_stu)
+#print(Student.average_sen())
