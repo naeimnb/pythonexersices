@@ -10,4 +10,11 @@ except mysql.connector.Error as err:
     else:
         print(err)
 else:
+    name = "Ali"
+    age = 34
+    sex = 'M'
+    cursor = con.cursor()
+    cursor.execute('INSERT INTO people VALUES("%s","%i","%s")' % (name, age, sex))
+    con.commit()
+    cursor.close()
     con.close()
