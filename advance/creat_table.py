@@ -1,5 +1,14 @@
 import mysql.connector
 from mysql.connector import errorcode
+
+
+def my_function():
+    query = "CREATE TABLE employee (Name nvarchar(20), Weight int, Height int)"
+    cursor = con.cursor()
+    cursor.execute(query)
+    cursor.close()
+
+
 try:
     con = mysql.connector.connect(user='niminimda', password='123456', host='127.0.01', database='test')
 except mysql.connector.Error as err:
@@ -10,10 +19,6 @@ except mysql.connector.Error as err:
     else:
         print(err)
 else:
-    query = "SELECT * FROM people; "
-    cursor = con.cursor()
-    cursor.execute(query)
-    for (name,age,sex) in cursor:
-        print(name,age,sex)
+    my_function()
 
     con.close()
